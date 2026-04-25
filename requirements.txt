@@ -1,0 +1,23 @@
+# Home Credit Default Risk — Python dependencies
+# Core
+pandas>=2.0
+numpy>=1.24
+scikit-learn>=1.3
+scipy>=1.11
+openpyxl>=3.1          # Excel report writing
+pyarrow>=12.0          # Parquet read/write
+
+# Gradient boosting (install at least one)
+lightgbm>=4.0          # Recommended — fastest + best AUC
+xgboost>=2.0           # Alternative
+# catboost>=1.2        # Optional — slower but handles categoricals natively
+
+# Hyperparameter tuning
+optuna>=3.3
+
+# Explainability
+shap>=0.44
+
+# Visualisation (optional — for notebook use)
+matplotlib>=3.7
+seaborn>=0.12
