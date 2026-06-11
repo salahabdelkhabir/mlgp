@@ -1,0 +1,35 @@
+# Data
+DATA/
+data/
+
+# Outputs
+reports/
+models/
+
+# Python
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Environment
+.env
+.venv
+venv/
+env/
+
+# Notebook checkpoints
+.ipynb_checkpoints/

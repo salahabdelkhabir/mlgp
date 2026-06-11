@@ -363,6 +363,15 @@ def main():
         submission.head(100).to_excel(writer, sheet_name="08_submission_preview", index=False)
 
     logger.info(f"Final evaluation report → {report_path}")
+
+    # ── 8. Visualisations ──────────────────────────────────────────────────
+    logger.info("Generating visualisation figures …")
+    try:
+        import visualize as viz
+        viz.main()
+    except Exception as e:
+        logger.warning(f"Visualisation skipped ({e})")
+
     logger.info("\nPipeline complete ✓")
     logger.info("──────────────────────────────────────────────────────────")
     logger.info(f"  Best model   : {type(tuned_model).__name__}")
